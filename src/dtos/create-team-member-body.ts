@@ -1,11 +1,11 @@
-import { IsEmpty, Length } from 'class-validator'
+import { IsNotEmpty, Length } from 'class-validator'
 
 export class CreateTeamMemberBody{
-    @IsEmpty()
+    @IsNotEmpty()
     @Length(5, 100)
     name: string;
     
-    @IsEmpty({
+    @IsNotEmpty({
         message: "The member function should not the empty.",
     })
     function: string;
