@@ -10,9 +10,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// Seria como uma uma tabela:
+// Representa uma tabela no Banco de Dados:
 model RocketTeamMember {
-  id        String @id
-  name      String
-  function  String
+  id       String @id
+  name     String
+  function String
 }
